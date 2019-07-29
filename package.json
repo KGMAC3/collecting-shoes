@@ -3,12 +3,14 @@
   "name": "collecting-shoes",
   "scripts": {
     "start": "browser-sync start --server public --files public",
-    "deploy": "echo 'To setup deployment run: yarn setup-deploy'",
-    "setup-deploy": "app-app --deploy && yarn deploy"
+    "deploy": "netlify deploy --prod --dir=public",
+    "setup-deploy": "app-app --deploy && yarn deploy",
+    "postdeploy": "echo 'Your site was deployed to https://collecting-shoes-kylemac.netlify.com'"
   },
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "stylelint": "^10.1.0",
     "stylelint-config-standard": "^18.3.0"
-  }
+  },
+  "homepage": "https://collecting-shoes-kylemac.netlify.com"
 }
