@@ -2,11 +2,19 @@
   font: 16px / 1 sans-serif;
 }
 
+
+
+
 html {
   height: 100%;
+  background-color: rgb(217, 255, 0)
 }
 
 body {
-  margin: 0;
+  margin: 0.25rem;
   min-height: 100%;
+  color: #3e64ff
+  
+
+  
 }
